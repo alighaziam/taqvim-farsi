@@ -1,0 +1,12 @@
+{
+  "events": [
+    {"month": 1, "day": 1, "title": "آغاز نوروز", "holiday": true, "calendar": "SHAMSI"},
+    {"month": 1, "day": 2, "title": "عید نوروز", "holiday": true, "calendar": "SHAMSI"},
+    {"month": 1, "day": 12, "title": "روز جمهوری اسلامی ایران", "holiday": true, "calendar": "SHAMSI"},
+    {"month": 1, "day": 13, "title": "روز طبیعت", "holiday": true, "calendar": "SHAMSI"},
+    {"month": 11, "day": 22, "title": "پیروزی انقلاب اسلامی", "holiday": true, "calendar": "SHAMSI"},
+    {"month": 12, "day": 29, "title": "روز ملی شدن صنعت نفت", "holiday": true, "calendar": "SHAMSI"},
+    {"month": 10, "day": 27, "title": "نمونه مناسبت قمری (تاریخ نمونه)", "holiday": false, "calendar": "QAMARI"}
+  ],
+  "_notice": "این داده‌ها صرفاً نمونه‌اند؛ تاریخ و عنوان و تعطیل بودن تمام مناسبت‌ها باید با تقویم رسمی منتشرشده توسط مراجع رسمی ایران تطبیق داده شود. مناسبت‌های قمری به رؤیت هلال وابسته‌اند."
+}
