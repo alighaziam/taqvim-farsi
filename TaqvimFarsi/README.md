@@ -17,23 +17,18 @@
 ## نیازمندی‌ها
 - Android Studio سازگار با AGP 8.13
 - JDK 17+
+- Gradle 8.13
 - Android SDK Platform 36
-- اتصال اینترنت فقط برای دریافت وابستگی‌های Gradle در اولین build؛ خود اپ پس از نصب آفلاین کار می‌کند.
 
-## بیلد
-در ریشه پروژه:
+## بیلد و آزمون
+در حال حاضر فایل باینری `gradle-wrapper.jar` در مخزن نیست؛ ابتدا Gradle 8.13 را نصب کنید، سپس از ریشه مخزن اجرا کنید:
+
 ```bash
-./gradlew test
-./gradlew assembleDebug
+gradle -p TaqvimFarsi testDebugUnitTest
+gradle -p TaqvimFarsi assembleDebug
 ```
 
-خروجی APK: `app/build/outputs/apk/debug/app-debug.apk`
-
-برای ویندوز:
-```bat
-gradlew.bat test
-gradlew.bat assembleDebug
-```
+گردش‌کار GitHub Actions در مسیر `.github/workflows/android-ci.yml` همین دو مرحله را اجرا و APK دیباگ را به‌عنوان artifact منتشر می‌کند. تا موفقیت اجرای CI، خروجی APK را تأییدشده فرض نکنید.
 
 ## ساخت keystore برای Release
 ```bash
@@ -45,4 +40,4 @@ keytool -genkeypair -v -keystore taqvim-release.jks -keyalg RSA -keysize 4096 -v
 - WorkManager زمان اجرای دقیق در ساعت مشخص را تضمین نمی‌کند.
 - تاریخ قمری civil است، نه مبتنی بر رؤیت هلال.
 - فونت وزیرمتن در این نسخه اضافه نشده و فونت سیستم استفاده می‌شود.
-- `gradle-wrapper.jar` در بسته موجود نیست؛ در صورت نیاز Gradle 8.13 را نصب کنید. آزمون‌ها و APK در محیط تهیه این بسته اجرا/تأیید نشده‌اند.
+- مناسبت‌های JSON نمونه‌اند و برای انتشار باید با داده رسمی سال مربوط تطبیق داده شوند.
